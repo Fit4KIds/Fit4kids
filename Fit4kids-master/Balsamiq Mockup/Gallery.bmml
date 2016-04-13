@@ -1,0 +1,44 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="908" measuredH="596" mockupW="527" mockupH="573">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="381" y="23" w="-1" h="-1" measuredW="282" measuredH="573" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <model>IPhone5</model>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="548" y="123" w="56" h="26" measuredW="285" measuredH="130" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <crop>223%2C481%2C223%2C127</crop>
+        <src>./assets/FinalLogo.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Title" x="414" y="149" w="-1" h="-1" measuredW="217" measuredH="43" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>11820806</color>
+        <text>Your%20Photos</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Image" x="425" y="207" w="206" h="114" measuredW="77" measuredH="79" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Image" x="425" y="350" w="206" h="137" measuredW="77" measuredH="79" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::PointyButton" x="414" y="123" w="-1" h="-1" measuredW="48" measuredH="27" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16750848</color>
+        <direction>left</direction>
+        <text>Back</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::StickyNote" x="799" y="177" w="-1" h="-1" measuredW="109" measuredH="123" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A%20list%20of%20your%20exercise%20photos.</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="409" y="207" w="-1" h="280" measuredW="16" measuredH="100" zOrder="7" locked="false" isInGroup="-1"/>
+  </controls>
+</mockup>

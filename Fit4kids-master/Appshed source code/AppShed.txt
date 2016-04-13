@@ -1,0 +1,67 @@
+/**this is the source code kalyan sudra edited within the app shed*/
+<?php
+require_once 'vendor/autoload.php';
+class App786988
+{
+    /** @var App786988 $instance */
+    protected static $instance;
+    /** @var AppShed\Remote\Element\App $app */
+    protected $app;
+    public static function instance()
+    {
+        if (!static::$instance) {
+            static::$instance = new static();
+        }
+        return static::$instance;
+    }
+    protected function getTab2377217()
+    {
+        $tab2377217 = new AppShed\Remote\Element\Tab('Home', new AppShed\Remote\Style\Image('https://d1yeqpqwjn2qg3.cloudfront.net/7Wr3XACFKs8hioiH0x7sKxqquOw=/fit-in/60x60/http://appshed-id-images.s3-website-eu-west-1.amazonaws.com/1590417'));
+        $tab2377217->setScreenLink('10042926', null, true);
+        return $tab2377217;
+    }
+    protected function getTab2377719()
+    {
+        $tab2377719 = new AppShed\Remote\Element\Tab('Games', new AppShed\Remote\Style\Image('https://d1yeqpqwjn2qg3.cloudfront.net/9M3ajS0XeD1NatYMtefgrEvpFI8=/fit-in/60x60/http://appshed-id-images.s3-website-eu-west-1.amazonaws.com/1590416'));
+        $tab2377719->setScreenLink('10045553', null, true);
+        return $tab2377719;
+    }
+    protected function getTab2377720()
+    {
+        $tab2377720 = new AppShed\Remote\Element\Tab('Mini-Games', new AppShed\Remote\Style\Image('https://d1yeqpqwjn2qg3.cloudfront.net/UJ5QK0VMXaN8lYySzqegSz6qtYc=/fit-in/60x60/http://appshed-id-images.s3-website-eu-west-1.amazonaws.com/1590413'));
+        $tab2377720->setScreenLink('10045555', null, true);
+        return $tab2377720;
+    }
+    protected function getTab2377721()
+    {
+        $tab2377721 = new AppShed\Remote\Element\Tab('Groups', new AppShed\Remote\Style\Image('https://d1yeqpqwjn2qg3.cloudfront.net/YECeC9I2fzxfQHv3ldDYWs2P7wo=/fit-in/60x60/http://appshed-id-images.s3-website-eu-west-1.amazonaws.com/1205672'));
+        $tab2377721->setScreenLink('10045567', null, true);
+        return $tab2377721;
+    }
+    protected function getTab2377724()
+    {
+        $tab2377724 = new AppShed\Remote\Element\Tab('Gallery', new AppShed\Remote\Style\Image('https://d1yeqpqwjn2qg3.cloudfront.net/RBePY4LpPlXx4X-Uyn9LjaPVxI8=/fit-in/60x60/http://appshed-id-images.s3-website-eu-west-1.amazonaws.com/745578'));
+        $tab2377724->setScreenLink('10045589', null, true);
+        return $tab2377724;
+    }
+    public function get()
+    {
+        if (!$this->app) {
+            $this->app = new AppShed\Remote\Element\App('Fit4Kids');
+            $this->app->setIcon(new AppShed\Remote\Style\Image('https://d1yeqpqwjn2qg3.cloudfront.net/Xu6m98ZRpxlRfklHatwNljfEyKk=/fit-in/156x156/http://appshed-id-images.s3-website-eu-west-1.amazonaws.com/2'));
+            $this->app->setDescription('This is the description for your new app.
+            $this->app->setSplash(new AppShed\Remote\Style\Image('https://d1yeqpqwjn2qg3.cloudfront.net/UGyo5I101uEx-JLEITsRVG3bLds=/640x960/http://appshed-id-images.s3-website-eu-west-1.amazonaws.com/3'));
+            $this->app->addChild($this->getTab2377217());
+            $this->app->addChild($this->getTab2377719());
+            $this->app->addChild($this->getTab2377720());
+            $this->app->addChild($this->getTab2377721());
+            $this->app->addChild($this->getTab2377724());
+        }
+        return $this->app;
+    }
+}
+if (AppShed\Remote\HTML\Remote::isOptionsRequest()) {
+    AppShed\Remote\HTML\Remote::getCORSResponseHeaders();
+}
+$remote = new AppShed\Remote\HTML\Remote(App786988::instance()->get());
+$remote->getResponse();
