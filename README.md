@@ -1,5 +1,5 @@
 # Fit4kids
-All our apps for good content
+All our apps for good content.
 
 I have compiled all coding assets in this repository I have two folders.
 
